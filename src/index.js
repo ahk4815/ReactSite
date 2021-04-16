@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import "./index.css";
 
+//import Home from "./Home";
+import Home,{age,name} from "./Home";
+
+
 let curDate=new Date();
 curDate=curDate.getHours();
 let greeting="";
@@ -25,6 +29,10 @@ else{
 ReactDom.render(
   <>
   <div>
+    <h1>{name}</h1>
+    <h1>{age}</h1>
+   <Home/>
+    <br/>
    <h1>Hey Good <span style={cssStyle}>{greeting}</span></h1>
    </div>
   </>
